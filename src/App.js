@@ -84,7 +84,15 @@ class App extends Component{
   render(){
 
     return (
-      <div className='outer'>  
+      <div className='outer'>
+        <div className='userInputSection'>
+          <UserInputSection
+          handleChange={this.handleChange}
+          handleListSubmit={this.handleListSubmit}
+          handlePhotoChange={this.handlePhotoChange}
+          togglePhoto={this.togglePhoto}
+          />
+        </div>
         <div className='renderedPageSection'>
           <RenderedPageSection
           displayGeneral={this.state.general}
@@ -95,14 +103,7 @@ class App extends Component{
           displayPhoto={this.state.photo}
           />
         </div>
-        <div className='userInputSection'>
-          <UserInputSection
-          handleChange={this.handleChange}
-          handleListSubmit={this.handleListSubmit}
-          handlePhotoChange={this.handlePhotoChange}
-          togglePhoto={this.togglePhoto}
-          />
-        </div>
+        
        </div>
     );
   }
