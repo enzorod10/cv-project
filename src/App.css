@@ -1,38 +1,618 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    --purple: #161032;
+    --canary: #FAFF81;
+    --skyBlue: rgba(24, 115, 168, 0.651);
+    --darkBlue: rgba(8, 0, 124, 0.397);
+    --brown: #B26700;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.outer{
+    box-sizing: border-box;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.userInputSection{
+    height: 25%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(24, 115, 168, 0.651);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.tabContainer{
+    display: flex;
+    width: 400px;
+    justify-content: center;
+    position: absolute;
+    margin-top: -24px;
+    font-weight: 550;
+    gap: 9px;
 }
 
-.App-link {
-  color: #61dafb;
+.tabContainer > div{
+    cursor: pointer;
+    background-color: rgba(8, 0, 124, 0.397);
+    color: var(--canary);
+    padding: 3px;
+    border: 1px var(--canary) solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.315) 2px 3px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.infoInputContainer{
+    height: 80%;
+    width: 400px;
+    margin-bottom: -5%;
+    overflow: hidden;
+}
+
+/* general section */
+.generalInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    padding: 2%;
+}
+
+.generalInformation > div{
+    display: flex;
+    flex-direction: column;
+}
+
+#name,
+#occupation{
+    border: none;
+    color: var(--purple);
+    border-radius: 50px;
+    font-weight: 600;
+    width: 350px;
+    padding-left: 20px;
+    place-self: center;
+    height: 30px;
+    background-color: var(--canary);
+}
+
+#name:focus,
+#occupation:focus,
+#description:focus{
+    outline: none;
+}
+
+#description{
+    resize: none;
+    border: none;
+    font-weight: 600;
+    color: var(--purple);
+    padding: 2% 0% 2% 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    width: 350px;
+    place-self: center;
+    height: 50px;
+    background-color: var(--canary);
+}
+
+#name::placeholder,
+#occupation::placeholder,
+#description::placeholder{
+    color: grey;
+}
+
+#description::-webkit-scrollbar{
+    width: 0px;
+
+}
+
+
+.generalInformation > div:last-child{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.imageUploadContainer{
+    padding: 2% 0% 2% 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    width: 179px;
+    place-self: center;
+    background-color: var(--canary);
+}
+
+.imageUploadContainer > div:nth-child(1){
+    display: flex;
+    align-items: center;
+    flex: 2;
+    gap: 10px;    
+
+}
+
+.imageUploadContainer > div:nth-child(2){
+    display: flex;
+    align-items: center;
+    flex: 5;
+}
+
+
+/* contact section */
+.contactInformation{
+    height: 100%;
+}
+
+.contactContainer{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    width: 100%;
+    
+}
+
+
+.contactContainer > input{
+    border: none;
+    padding: 2% 0% 2% 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    width: 170px;
+    place-self: center;
+    background-color: var(--canary);
+    height: 30px;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+
+.contactContainer > input:focus{
+    outline: none;
+}
+
+/* skill section */
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 2%;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.skills > div:nth-child(1){
+    padding: 2% 0% 2% 0%;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    border-radius: 50px;
+    width: 200px;
+    background-color: var(--canary);
+    height: 30px;
+    align-items: center;
+    gap: 2px;
+}
+
+.skills > div:nth-child(1) > img{
+    height: 20px;
+    cursor: pointer;
+}
+
+#skills{
+    border: none;
+    background-color: var(--canary);
+    width: 150px;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+#skills:focus{
+    outline: none;   
+}
+
+.skillsContainer{
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(125px, 10%));
+    height: 80%;
+    word-break: break-word;
+    width: 100%;
+    overflow-y: scroll;
+    border-radius: 5px;
+    color: var(--purple);
+    border-top: 1px var(--canary) solid;
+    border-bottom: 1px var(--canary) solid;
+}
+
+
+.skillsContainer::-webkit-scrollbar{
+    width: 7px;
+}
+
+.skillsContainer::-webkit-scrollbar-thumb{
+    background: var(--canary);
+    border-radius: 5px;
+}
+
+.skill{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    gap: 10px;
+    background-color: var(--canary);
+    border-radius: 20px;
+    color: var(--purple);
+    font-weight: 600;
+}
+
+.skill > img{
+    cursor: pointer;
+    height: 20px;
+}
+
+/* educational section */
+.educationalInformation{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    padding: 2%;
+}
+
+.educationalInformation > input{
+    border: none;
+    color: var(--purple);
+    padding-left: 2px;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 350px;
+    padding-left: 20px;
+    place-self: center;
+    height: 30px;
+    background-color: var(--canary);
+}
+
+#schoolName:focus,
+#startDateStudy:focus,
+#endDateStudy:focus,
+#titleOfStudy:focus{
+    outline: none;
+}
+
+/* practical section */
+.outerPracticalExperience{
+    height: 100%;
+}
+
+.practicalExperience{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 2%;
+    height: 100%;  
+}
+
+.practicalExperience > input,
+.practicalExperience > div{
+    border: none;
+    color: var(--purple);
+    padding-left: 2px;
+    border-radius: 50px;
+    font-weight: 600;
+    width: 350px;
+    padding-left: 20px;
+    place-self: center;
+    height: 30px;
+    background-color: var(--canary);
+}
+
+.practicalExperience > input:focus,
+#mainTasks:focus{
+    outline: none;
+}
+
+#mainTasks{
+    width: 100%;
+    border: none;
+    color: var(--purple);
+    border-radius: 50px;
+    font-weight: 600;
+    width: 270px;
+    height: 30px;
+    background-color: var(--canary);
+}
+.mainTasksContainer{
+    display: flex;
+    align-items: center;
+    gap: 3px
+}
+
+.editTasks{
+    display: flex;
+    bottom: 0px;
+    right: 0px;
+    gap: 3px;
+}
+
+.editTasks > img{
+    cursor: pointer;
+    height: 22px;
+}
+
+.displayedTasks{
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 100%;
+    gap: 5px;
+}
+
+.displayedTasks > img{
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.tasksContainer{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 10%;
+    padding-top: 2%;
+    overflow: auto;
+}
+
+.tasksContainer::-webkit-scrollbar{
+    width: 7px;
+}
+
+.tasksContainer::-webkit-scrollbar-thumb{
+    background: var(--canary);
+    border-radius: 5px;
+}
+
+.task{
+    display: flex;
+    list-style-type: none;
+    gap: 2%;
+    padding-left: 20px;
+    align-items: center;
+    color: var(--purple);
+    border-radius: 50px;
+    font-weight: 600;
+    background-color: var(--canary);
+    word-break: break-word;
+    
+}
+
+.deleteTaskButton{
+    height: 22px;
+    cursor: pointer;
+}
+
+/* ----------- Rendered Page Section ----------- */
+.renderedPageSection{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    height: 75%;
+    padding: 1%;
+}
+
+.cvPage{
+    border: 2px black solid;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-rows: 6fr 4fr 5fr 4fr 10fr;
+    height: 100%;
+    width: 30%;
+}
+
+.dateContainer{
+    display: flex;
+    gap: 2%;
+    font-size: 13px;
+    font-style: italic;
+    color: grey;
+}
+
+h1{
+    border-bottom: 3px black solid;
+    width: fit-content;
+    font-size: 26px;
+    height: 29px;
+    color: grey;
+}
+
+h2{
+    font-size: 20px;
+    font-weight: 550;
+}
+
+h3{
+    font-size: 16px;
+    font-weight: 400;
+}
+
+/* GENERAL INFO SECTION */
+.generalInfoRendered{
+    grid-row: 1/2;
+    display: grid;
+    overflow: hidden;
+    background-color: #183042;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 1%;
+
+}
+
+.generalInfoRendered > div{
+    display: flex;
+    overflow: hidden;
+}
+
+.generalInfoRendered > div > div:nth-child(1){
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    overflow: hidden;
+}
+
+.generalInfoRendered > div > div:nth-child(2){
+    flex: 1;
+}
+
+.photoContainerRendered{
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    display: none;
+}
+
+.photoContainerRendered > img{
+    width: 100%;
+    height: 100%;
+    border: 2px blue solid;
+}
+
+.nameAndOccupation{
+    display: flex;
+    flex-direction: column;
+}
+
+.nameRendered{
+    font-size: 30px;
+    font-weight: bold;
+    
+    height: 30px;
+}
+
+.occupationRendered{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.description{
+    font-size: 15px;
+    font-style: oblique;
+    height: 100%;
+    word-break: break-word;
+}
+
+/* CONTACT SECTION */
+.contactContainerRendered{
+    font-size: 15px;
+    display: grid;
+    grid-row: 2/3;
+    grid-template-columns: repeat(2, 1fr);
+    height: 100%;
+    align-items: center;
+    word-break: break-word;
+    padding: 1% 1% 1% 1%;
+    background-color: #0c1829;
+}
+
+.contactContainerRendered > div{
+    height: 20px;
+    display: flex;
+    gap: 8px;
+    font-size: 15px;
+    align-items: center;
+    color: white;
+}
+
+.contactContainerRendered > div > img{
+    filter: brightness(100%)opacity(0.5) drop-shadow(0 0 0 white) saturate(12%);
+}
+
+/* SKILLS SECTION */
+.skillsRendered{
+    grid-row: 3/4;
+    overflow: hidden;
+    height: 100%;
+    padding: 0% 1% 0% 1%;
+}
+
+.skillsRenderedContainer{
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    height: 74%;
+    column-gap: 6px;
+    row-gap: 3px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.skillsRenderedContainer > div{
+    display: flex;
+    place-items: center;
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: grey;
+    color: white;
+    height: 23px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* EDUCATIONAL INFO SECTION */
+.educationalInfoRendered{
+    grid-row: 4/5;
+    overflow: hidden;
+    padding: 0% 1% 0% 1%;
+}
+
+.educationalInfoRenderedContainer{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+}
+
+/* PRACTICAL EXPERIENCE SECTION */
+.practicalExperienceRendered{
+    grid-row: 5/-1;
+    overflow: hidden;
+    padding: 0% 1% 0% 1%;
+}
+
+@media (max-width: 600px){
+    .cvPage{
+        width: 100%;
+    }
+    .infoInputContainer{
+        width: 350px;
+    }
+    .tabContainer{
+        width: 350px;
+    }
+}
+
+@media (min-width: 601px){
+    .cvPage{
+        width: 500px;
+    }
+    .infoInputContainer{
+        width: 450px;
+    }
+    .tabContainer{
+        width: 450px;
+    }
 }
