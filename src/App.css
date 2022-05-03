@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    user-select: none;
     --purple: #161032;
     --canary: #FAFF81;
     --skyBlue: rgba(24, 115, 168, 0.651);
@@ -24,6 +23,7 @@
     background-color: #183042;
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
+    user-select: none;
 }
 
 
@@ -36,6 +36,7 @@
     font-weight: 550;
     gap: 9px;
 }
+
 
 .tabContainer > div{
     cursor: pointer;
@@ -97,7 +98,7 @@
     border-radius: 50px;
     width: 350px;
     place-self: center;
-    height: 50px;
+    height: 40px;
     background-color: var(--canary);
 }
 
@@ -431,6 +432,7 @@ label[for='fileInput']:hover{
     grid-template-rows: 6fr 4fr 5fr 4fr 9fr;
     height: 100%;
     width: 30%;
+    user-select: none;
 }
 
 .dateContainer{
@@ -444,18 +446,18 @@ label[for='fileInput']:hover{
 h1{
     border-bottom: 3px grey solid;
     width: fit-content;
-    font-size: 26px;
+    font-size: 25px;
     height: 29px;
     color: grey;
 }
 
 h2{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 550;
 }
 
 h3{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 400;
 }
 
