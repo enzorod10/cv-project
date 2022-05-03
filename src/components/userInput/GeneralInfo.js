@@ -55,7 +55,7 @@ class GeneralInfo extends Component{
                         Photo?
                         <input type='checkbox' onChange={(e) => this.toggleImage(e)}/>
                         <input style={{display: 'none'}}id='fileInput' type='file' onChange={e => this.handleChange(e)}/> 
-                        <label style={this.state.showImage} htmlFor='fileInput'> UPLOAD</label>
+                        <label style={this.state.showImage} htmlFor='fileInput'> Upload</label>
                     </div>
                 </div>
             </div>

@@ -5,33 +5,31 @@ import RenderedPageSection from './components/renderedResult/RenderedPageSection
 class App extends Component{
   state = {
     general: {
-      name: '',
-      occupation: '',
-      description: '',
-      email: '',
-      phoneNumber: ''
+      name: 'John Doe',
+      occupation: 'General Manager',
+      description: 'Service-driven General Manager with 3+ years of experience upholding excellent customer service standards in the food service industry. Dedicated to improving operations and increasing customer traffic.',
     },
     contact: {
-      email: '',
-      phone: '',
-      location: '',
-      website: '',
-      linkedIn: '',
-      twitter: ''
+      email: 'j.doe@gmail.com',
+      phone: '(365)-323-2928',
+      location: 'Cedar, MN',
+      website: 'www.mywebsite.com',
+      linkedIn: 'linkedIn.com/johndoe',
+      twitter: '@JohnDoe'
     },
     skills: [],
     educational: {
-      schoolName: '',
-      startDateStudy: '',
-      endDateStudy: '',
-      titleOfStudy: '',
+      schoolName: 'Adelphi University',
+      startDateStudy: '09/2012',
+      endDateStudy: '06/2016',
+      titleOfStudy: 'Business Administration'
     },
     practical: {
-      companyName: '',
-      positionTitle: '',
+      companyName: 'Retail Ocean',
+      positionTitle: 'General Manager',
       mainTasks: [],
-      startDate: '',
-      endDate: ''
+      startDate: '04/2010',
+      endDate: '05/2022'
     },
     photo: {
       image: '',
@@ -86,15 +84,7 @@ class App extends Component{
   render(){
 
     return (
-      <div className='outer'>
-        <div className='userInputSection'>
-          <UserInputSection
-          handleChange={this.handleChange}
-          handleListSubmit={this.handleListSubmit}
-          handlePhotoChange={this.handlePhotoChange}
-          togglePhoto={this.togglePhoto}
-          />
-        </div>
+      <div className='outer'>  
         <div className='renderedPageSection'>
           <RenderedPageSection
           displayGeneral={this.state.general}
@@ -103,6 +93,14 @@ class App extends Component{
           displayPractical={this.state.practical}
           displayContact={this.state.contact}
           displayPhoto={this.state.photo}
+          />
+        </div>
+        <div className='userInputSection'>
+          <UserInputSection
+          handleChange={this.handleChange}
+          handleListSubmit={this.handleListSubmit}
+          handlePhotoChange={this.handlePhotoChange}
+          togglePhoto={this.togglePhoto}
           />
         </div>
        </div>

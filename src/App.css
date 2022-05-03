@@ -21,7 +21,9 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: rgba(24, 115, 168, 0.651);
+    background-color: #183042;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
 }
 
 
@@ -37,7 +39,6 @@
 
 .tabContainer > div{
     cursor: pointer;
-    background-color: rgba(8, 0, 124, 0.397);
     color: var(--canary);
     padding: 3px;
     border: 1px var(--canary) solid;
@@ -108,9 +109,7 @@
 
 #description::-webkit-scrollbar{
     width: 0px;
-
 }
-
 
 .generalInformation > div:last-child{
     display: flex;
@@ -125,6 +124,21 @@
     width: 179px;
     place-self: center;
     background-color: var(--canary);
+    color: var(--purple);
+}
+
+label[for='fileInput']{
+    padding: 1px 14px 1px 14px;
+    font-size: 14px;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: rgba(165, 42, 42, 0.349);
+    color: black;
+    
+}
+
+label[for='fileInput']:hover{
+    background-color: rgba(165, 42, 42, 0.74);
 }
 
 .imageUploadContainer > div:nth-child(1){
@@ -132,15 +146,14 @@
     align-items: center;
     flex: 2;
     gap: 10px;    
-
 }
+
 
 .imageUploadContainer > div:nth-child(2){
     display: flex;
     align-items: center;
     flex: 5;
 }
-
 
 /* contact section */
 .contactInformation{
@@ -152,10 +165,8 @@
     place-items: center;
     grid-template-columns: 1fr 1fr;
     height: 100%;
-    width: 100%;
-    
+    width: 100%;   
 }
-
 
 .contactContainer > input{
     border: none;
@@ -395,7 +406,8 @@
     font-weight: 600;
     background-color: var(--canary);
     word-break: break-word;
-    
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .deleteTaskButton{
@@ -416,7 +428,7 @@
     border: 2px black solid;
     display: grid;
     box-sizing: border-box;
-    grid-template-rows: 6fr 4fr 5fr 4fr 10fr;
+    grid-template-rows: 6fr 4fr 5fr 4fr 9fr;
     height: 100%;
     width: 30%;
 }
@@ -430,7 +442,7 @@
 }
 
 h1{
-    border-bottom: 3px black solid;
+    border-bottom: 3px grey solid;
     width: fit-content;
     font-size: 26px;
     height: 29px;
@@ -487,7 +499,8 @@ h3{
 .photoContainerRendered > img{
     width: 100%;
     height: 100%;
-    border: 2px blue solid;
+    border: 2px grey solid;
+    border-radius: 10px;
 }
 
 .nameAndOccupation{
@@ -509,7 +522,7 @@ h3{
 
 
 .description{
-    font-size: 15px;
+    font-size: 13px;
     font-style: oblique;
     height: 100%;
     word-break: break-word;
@@ -532,14 +545,16 @@ h3{
     height: 20px;
     display: flex;
     gap: 8px;
-    font-size: 15px;
+    font-size: 13px;
     align-items: center;
     color: white;
 }
 
 .contactContainerRendered > div > img{
-    filter: brightness(100%) drop-shadow(0 0 0 white) saturate(12%);
+    height: 15px;
+    width: 15px;
 }
+
 
 /* SKILLS SECTION */
 .skillsRendered{
@@ -558,12 +573,13 @@ h3{
     row-gap: 3px;
     padding-top: 1%;
     padding-bottom: 1%;
+    align-items: center;
 }
 
 .skillsRenderedContainer > div{
     display: flex;
     place-items: center;
-    font-size: 15px;
+    font-size: 13px;
     border-radius: 5px;
     background-color: grey;
     color: white;
@@ -583,7 +599,6 @@ h3{
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 5px;
 }
 
 /* PRACTICAL EXPERIENCE SECTION */
@@ -591,6 +606,10 @@ h3{
     grid-row: 5/-1;
     overflow: hidden;
     padding: 0% 1% 0% 1%;
+}
+
+.practicalExperienceRendered{
+    font-size: 13px;
 }
 
 @media (max-width: 600px){
