@@ -68,8 +68,8 @@ class PracticalExperience extends Component{
                         <div className='mainTasksContainer'>
                             <input placeholder='Main Tasks' id='mainTasks' value={this.state.task.taskName} type='text' onChange={(e) => this.handleChange('practical', e.target.id, e.target.value)}/>
                             <div className='editTasks'>
-                                <img src={eyeIcon} alt='display tasks button' className='displayTasksButton' onClick={() => this.toggleDisplay()}/>   
                                 <img alt='add task button' src={checkmarkIcon}className='addTaskButton'onClick={() => this.handleSubmit()}/>
+                                <img src={eyeIcon} alt='display tasks button' className='displayTasksButton' onClick={() => this.toggleDisplay()}/>   
                             </div>
                         </div>
                         <input placeholder='Starting Date' id='startDate' type='text' onChange={(e) => this.props.handleChange('practical', e.target.id, e.target.value)}/>

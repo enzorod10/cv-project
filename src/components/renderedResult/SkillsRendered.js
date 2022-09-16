@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { uid } from 'uid'
 
 class SkillsRendered extends Component{
 
@@ -8,7 +9,7 @@ class SkillsRendered extends Component{
                 <h1> Skills </h1>
                 <div className='skillsRenderedContainer'>
                     {this.props.displaySkills.map(skill => {
-                        return <div key={skill.id}> {skill.skillName} </div>
+                        return <div key={uid}> {skill.skillName} </div>
                     })}
                 </div>
             </div>
