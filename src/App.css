@@ -2,8 +2,8 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    --purple: #161032;
-    --canary: #FAFF81;
+    --purple: #000000; /* Changed this to black */
+    --canary: #cbccbb;
     --skyBlue: rgba(24, 115, 168, 0.651);
     --darkBlue: rgba(8, 0, 124, 0.397);
     --brown: #B26700;
@@ -20,10 +20,7 @@
     display: grid;
     justify-content: center;
     align-items: center;
-    background-color: rgba(9, 17, 61, 0.705);
     user-select: none;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
 }
 
 
@@ -40,15 +37,14 @@
 
 .tabContainer > div{
     cursor: pointer;
-    color: var(--canary);
     padding: 3px;
     border: 1px var(--canary) solid;
     border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.315) 2px 3px 0px;
+    box-shadow: rgba(0, 0, 0, 0.315) 2px 2px 0px;
 }
 
 .tabContainer > div:hover{
-    background-color: rgba(0, 0, 0, 0.747) !important;
+    background-color: rgba(0, 0, 0, 0.070) !important;
 }
 
 .infoInputContainer{
@@ -75,7 +71,6 @@
 #name,
 #occupation{
     border: none;
-    color: var(--purple);
     border-radius: 50px;
     font-weight: 600;
     width: 350px;
@@ -145,13 +140,8 @@
     border-radius: 50px;
     font-weight: 550;
     cursor: pointer;
-    background-color: rgba(250, 250, 250, 0.959);
+    background-color: rgba(133, 110, 49, 0.486);
     color: rgba(14, 14, 14, 0.836);
-}
-
-.pdfDownloadButton:hover{
-    background-color: rgba(128, 128, 128, 0.671);
-    color: rgba(255, 255, 255, 0.712);
 }
 
 label[for='fileInput']{
@@ -159,12 +149,8 @@ label[for='fileInput']{
     font-size: 14px;
     border-radius: 50px;
     cursor: pointer;
-    background-color: rgba(165, 42, 42, 0.349);
-    color: black;
-}
-
-label[for='fileInput']:hover{
-    background-color: rgba(165, 42, 42, 0.74);
+    background-color: rgba(133, 110, 49, 0.486);
+    color: rgb(0, 0, 0);
 }
 
 .imageUploadContainer > div:nth-child(1){

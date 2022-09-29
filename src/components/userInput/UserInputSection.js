@@ -47,11 +47,11 @@ class UserInputSection extends Component{
             <div className='infoInputContainer'>
                 <div className='tabContainerOuter'>
                     <div className='tabContainer'> 
-                        <div style={{backgroundColor: this.state.generalInfo.display === 'flex' ? 'rgba(0, 0, 0, 0.747)' : 'inherit'}} className='generalTab' onClick={() => this.handleClick('generalInfo')}> General </div>
-                        <div style={{backgroundColor: this.state.contactInfo.display === 'flex' ? 'rgba(0, 0, 0, 0.747)' : 'inherit'}} className='contactTab' onClick={() => this.handleClick('contactInfo')}>Contact</div>
-                        <div style={{backgroundColor: this.state.skills.display === 'flex' ? 'rgba(0, 0, 0, 0.747)' : 'inherit'}} className='skillsTab' onClick={() => this.handleClick('skills')}> Skills </div>
-                        <div style={{backgroundColor: this.state.educationalInfo.display === 'flex' ? 'rgba(0, 0, 0, 0.747)' : 'inherit'}} className='educationTab' onClick={() => this.handleClick('educationalInfo')}> Education </div>
-                        <div style={{backgroundColor: this.state.practicalExperience.display === 'flex' ? 'rgba(0, 0, 0, 0.747)' : 'inherit'}} className='experienceTab' onClick={() => this.handleClick('practicalExperience')}> Experience </div>
+                        <div style={{backgroundColor: this.state.generalInfo.display === 'flex' ? 'rgba(0, 0, 0, 0.226)' : 'inherit'}} className='generalTab' onClick={() => this.handleClick('generalInfo')}> General </div>
+                        <div style={{backgroundColor: this.state.contactInfo.display === 'flex' ? 'rgba(0, 0, 0, 0.226)' : 'inherit'}} className='contactTab' onClick={() => this.handleClick('contactInfo')}>Contact</div>
+                        <div style={{backgroundColor: this.state.skills.display === 'flex' ? 'rgba(0, 0, 0, 0.226)' : 'inherit'}} className='skillsTab' onClick={() => this.handleClick('skills')}> Skills </div>
+                        <div style={{backgroundColor: this.state.educationalInfo.display === 'flex' ? 'rgba(0, 0, 0, 0.226)' : 'inherit'}} className='educationTab' onClick={() => this.handleClick('educationalInfo')}> Education </div>
+                        <div style={{backgroundColor: this.state.practicalExperience.display === 'flex' ? 'rgba(0, 0, 0, 0.226)' : 'inherit'}} className='experienceTab' onClick={() => this.handleClick('practicalExperience')}> Experience </div>
                     </div>
                 </div>
                 <GeneralInfo
