@@ -184,7 +184,7 @@ Project Link: [https://github.com/enzorod10/cv-project](https://github.com/enzor
 [issues-shield]: https://img.shields.io/github/issues/enzorod10/cv-project.svg?style=for-the-badge
 [issues-url]: https://github.com/enzorod10/cv-project/issues
 [license-shield]: https://img.shields.io/github/license/enzorod10/cv-project.svg?style=for-the-badge
-[license-url]: https://github.com/enzorod10/cv-project/LICENSE.txt
+[license-url]: https://github.com/enzorod10/cv-project/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/enzo-rod
 [product-screenshot]: images/screenshot.png
