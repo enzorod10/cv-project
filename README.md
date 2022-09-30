@@ -66,16 +66,6 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
-
-### Built With
-
-* [![React][React.js]][React-url]
-* [![CSS][CSS]][CSS-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -99,9 +89,9 @@ Have node package manager (npm) installed
    ```sh
    npm install
    ```
-3. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
+3. Start the application
+   ```sh
+   npm start
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -185,18 +175,18 @@ Project Link: [https://github.com/enzorod10/cv-project](https://github.com/enzor
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo_name.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo_name.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo_name.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo_name.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo_name.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/enzorod10/cv-project.svg?style=for-the-badge
+[contributors-url]: https://github.com/enzorod10/cv-project/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/enzorod10/cv-project.svg?style=for-the-badge
+[forks-url]: https://github.com/enzorod10/cv-project/network/members
+[stars-shield]: https://img.shields.io/github/stars/enzorod10/cv-project.svg?style=for-the-badge
+[stars-url]: https://github.com/enzorod10/cv-project/stargazers
+[issues-shield]: https://img.shields.io/github/issues/enzorod10/cv-project.svg?style=for-the-badge
+[issues-url]: https://github.com/enzorod10/cv-project/issues
+[license-shield]: https://img.shields.io/github/license/enzorod10/cv-project.svg?style=for-the-badge
+[license-url]: https://github.com/enzorod10/cv-project/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[linkedin-url]: https://linkedin.com/in/enzo-rod
 [product-screenshot]: images/screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
