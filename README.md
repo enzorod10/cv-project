@@ -10,9 +10,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/enzorod10/cv-project">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
+
+![logo](https://user-images.githubusercontent.com/93365813/193402279-667a42c0-93ec-4fe6-808e-ae838f93fc87.png)
 
 <h3 align="center">Resume/CV Builder</h3>
 
@@ -56,14 +55,16 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+The main purpose of this web app is to allow users to see how their resumes change in realtime as they fill out the information needed. Users have the ability to include a photo if they desire to do so. The website is responsive on all devices so you can create the resume or CV on the go! When complete, users may download a PDF of their product so that they can share it.
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+<div align="center">
+
+![main](https://user-images.githubusercontent.com/93365813/193402653-76a17547-1e57-49ec-8523-699c4225a8d1.png)
+
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -103,7 +104,29 @@ Have node package manager (npm) installed
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+There are 5 different sections to fill out to get a full scope of your personal life, skills, education & work experience.
+
+<div align="center">
+
+![nav](https://user-images.githubusercontent.com/93365813/193402925-0477fcb4-9f44-4082-808e-44ed0d643c5b.png)
+
+</div>
+
+Users can include a photo if they choose to.
+
+<div align="center">
+
+![photooption](https://user-images.githubusercontent.com/93365813/193402999-0cb968a5-affe-4b3d-8034-e3a515456fa5.png)
+
+</div>
+
+When satisfied, one can download a PDF of what they have filled out with one button!
+
+<div align="center">
+
+![downloadbutton](https://user-images.githubusercontent.com/93365813/193403116-78b3d110-d80a-426a-845b-ae64a576493c.png)
+
+</div>
 
 _For more examples, please refer to the [Documentation](https://github.com/enzorod10/cv-project.git)_
 
@@ -166,6 +189,7 @@ Project Link: [https://github.com/enzorod10/cv-project](https://github.com/enzor
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+* [html2canvas](https://html2canvas.hertzen.com/)
 * [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
 * [Font Awesome](https://fontawesome.com)
@@ -189,10 +213,3 @@ Project Link: [https://github.com/enzorod10/cv-project](https://github.com/enzor
 [license-url]: https://github.com/enzorod10/cv-project/blob/main/LICENSE
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/enzo-rod
-[product-screenshot]: images/screenshot.png
-[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
-[React-url]: https://reactjs.org/
-[CSS.com]: https://www.w3schools.com/css/css_intro.asp
-[CSS-url]: https://img.shields.io/badge/-CSS-blue
-[html2canvas.com]: https://html2canvas.hertzen.com/
-[html2canvas-url]: https://img.shields.io/badge/-html2canvas-%237cb342
